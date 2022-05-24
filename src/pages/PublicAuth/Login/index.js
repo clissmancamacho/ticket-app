@@ -45,7 +45,7 @@ export default function Login() {
                   <FormLabel>Contraseña</FormLabel>
                   <Input type="password" />
                 </FormControl>
-                <Stack spacing={6}>
+                <Stack spacing={2}>
                   <Stack direction={{ base: 'column', sm: 'row' }} align={'center'} justify={'space-between'}>
                     <Checkbox>Recuerdame</Checkbox>
                     <Link color={'teal.500'} fontSize="sm">
