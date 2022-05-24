@@ -41,7 +41,7 @@ export const BlogAuthor = (props) => {
 
 const Event = () => {
   return (
-    <Container maxW={'7xl'} p="12">
+    <Container maxW={'7xl'} p={{ base: 0, sm: '12' }}>
       <Heading as="h1">Metallica World Tour</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}

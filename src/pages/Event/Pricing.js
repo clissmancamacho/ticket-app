@@ -77,7 +77,7 @@ const PackageTier = ({ title, options, typePlan, checked = false }) => {
 }
 const Pricing = () => {
   return (
-    <Box py={6} px={5} min={'100vh'}>
+    <Box py={{ base: 0, sm: 6 }} px={{ base: 0, sm: 5 }} min={'100vh'}>
       <Stack spacing={4} width={'100%'} direction={'column'}>
         <Stack
           p={5}

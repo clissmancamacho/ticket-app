@@ -1,6 +1,11 @@
 
   .seat {
-    background-color: teal !important;
+    background-color: white !important;
+    border: 1px solid black !important;
+  }
+
+  .seat .seat__number {
+    color: black !important;
   }
   
   .seat--reserved {
@@ -8,11 +13,18 @@
   }
   
   .seat--selected {
-    background-color: white !important;
+    background-color: green !important;
+  }
+  .seat--selected .seat__number {
+    color: white !important;
   }
   
   .seat-picker {
     margin: auto !important;
+  }
+
+  .seat-content {
+    overflow: scroll !important;
   }
   
   .seat-picker__row {
