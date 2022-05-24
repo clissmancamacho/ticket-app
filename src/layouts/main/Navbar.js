@@ -67,6 +67,7 @@ export default function WithSubnavigation() {
             color={'white'}
             bg={'pink.400'}
             href={'/login'}
+            as={'a'}
             _hover={{
               bg: 'pink.300',
             }}
