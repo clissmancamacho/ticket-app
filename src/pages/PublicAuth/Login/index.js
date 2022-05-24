@@ -24,9 +24,16 @@ export default function Login() {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex flex={1}>
-        <Image alt={'Login Image'} objectFit="cover" maxHeight={'100vh'} width="100%" src={LoginImage} />
+        <Image
+          alt={'Login Image'}
+          objectFit="cover"
+          maxHeight={{ base: '49vh', sm: '49vh', md: '100vh' }}
+          height={{ base: '100%', sm: 'auto' }}
+          width="100%"
+          src={LoginImage}
+        />
       </Flex>
-      <Flex p={4} flex={1} align={'center'} justify={'center'}>
+      <Flex p={{ base: 0, sm: 4 }} flex={1} align={{ base: 'flex-start', sm: 'center' }} justify={'center'}>
         <Center p={8}>
           <Stack spacing={4} w={'full'} maxW={'md'}>
             <Heading fontSize={'4xl'} textAlign="left">
