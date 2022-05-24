@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/668.8000b234.chunk.js","mappings":"yIAMA,UAJA,WACE,OAAO","sources":["pages/Home/index.js"],"sourcesContent":["import React from 'react'\n\nfunction index() {\n  return <div>index</div>\n}\n\nexport default index\n"],"names":[],"sourceRoot":""}
