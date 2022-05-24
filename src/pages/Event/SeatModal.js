@@ -1,0 +1,258 @@
+import {
+  Button,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Box,
+} from '@chakra-ui/react'
+import SeatPicker from 'react-seat-picker'
+
+export function SeatModal({ open, setOpen }) {
+  const rows = [
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+    [{ number: 1 }, { number: 2 }, { number: 3, isReserved: true }, { number: 4 }, { number: 5 }],
+    [{ number: 1 }, { number: 2 }, { number: 3, isReserved: true }, { number: 4 }],
+    [],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+      { number: 12 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+      { number: 12 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+      { number: 11 },
+    ],
+    [
+      { number: 1 },
+      { number: 2 },
+      { number: 3, isReserved: true },
+      { number: 4 },
+      { number: 5 },
+      { number: 6 },
+      { number: 7 },
+      { number: 8 },
+      { number: 9 },
+      { number: 10 },
+    ],
+  ]
+
+  return (
+    <>
+      <Modal isOpen={open} onClose={() => setOpen(false)} size="full">
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Modal Title</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Box width={'100%'}>
+              <SeatPicker rows={rows} maxReservableSeats={3} visible />
+            </Box>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="teal" mr={3}>
+              Aceptar
+            </Button>
+            <Button colorScheme="red" variant="ghost" onClick={() => setOpen(false)}>
+              Cerrar
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+}

@@ -18,9 +18,11 @@ import { FcGoogle } from 'react-icons/fc'
 import { FaFacebook } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import LoginImage from 'assets/images/LoginImage.jpg'
+import { useNavigate } from 'react-router-dom'
 
 export default function Login() {
   const [form, setForm] = useState(false)
+  const navigation = useNavigate()
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex flex={1}>
@@ -59,7 +61,7 @@ export default function Login() {
                       Olvidaste la Contraseña?
                     </Link>
                   </Stack>
-                  <Button colorScheme={'teal'} variant={'solid'}>
+                  <Button colorScheme={'teal'} variant={'solid'} onClick={() => navigation('/event')}>
                     Ingresar
                   </Button>
                   <Button colorScheme={'gray'} variant={'solid'} onClick={() => setForm(false)}>

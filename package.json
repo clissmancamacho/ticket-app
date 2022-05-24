@@ -17,6 +17,8 @@
     "react-icons": "^3.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-seat-picker": "^1.5.3",
+    "react-tooltip": "^4.2.21",
     "web-vitals": "^0.2.2"
   },
   "devDependencies": {

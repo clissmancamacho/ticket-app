@@ -16,7 +16,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
-import { ColorModeSwitcher } from './ColorModeSwitcher'
+import { ColorModeSwitcher } from '../ColorModeSwitcher'
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()

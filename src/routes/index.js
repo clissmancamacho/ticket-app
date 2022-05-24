@@ -4,6 +4,7 @@ import { LoadingScreen } from 'components'
 
 // Pages
 import MainLayout from 'layouts/main'
+import PrivateLayout from 'layouts/private'
 
 const Loadable = (Component) => (props) =>
   (
@@ -15,6 +16,7 @@ const Loadable = (Component) => (props) =>
 // Pages public
 const Home = Loadable(lazy(() => import('pages/Home')))
 const PublicLogin = Loadable(lazy(() => import('pages/PublicAuth/Login')))
+const Event = Loadable(lazy(() => import('pages/Event')))
 const NotFound = Loadable(lazy(() => import('pages/NotFound')))
 
 export default function Router() {
@@ -27,6 +29,11 @@ export default function Router() {
     {
       path: '/login',
       children: [{ element: <PublicLogin />, path: '/login' }],
+    },
+    {
+      path: '/event',
+      element: <PrivateLayout />,
+      children: [{ element: <Event />, path: '/event' }],
     },
     {
       path: '*',

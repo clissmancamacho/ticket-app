@@ -1,0 +1,27 @@
+
+  .seat {
+    background-color: teal !important;
+  }
+  
+  .seat--reserved {
+    background-color: gray !important;
+  }
+  
+  .seat--selected {
+    background-color: white !important;
+  }
+  
+  .seat-picker {
+    margin: auto !important;
+  }
+  
+  .seat-picker__row {
+  }
+  
+  .seat-picker__row__number {
+  }
+  
+  div.blank {
+    display: none !important;
+  }
+  
