@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkticket_app=self.webpackChunkticket_app||[]).push([[668],{5668:function(e,t,n){n.r(t);n(2791);var c=n(184);t.default=function(){return(0,c.jsx)("div",{children:"index"})}}}]);
-//# sourceMappingURL=668.8000b234.chunk.js.map
