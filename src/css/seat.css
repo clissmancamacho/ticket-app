@@ -1,7 +1,7 @@
 
   .seat {
     background-color: white !important;
-    border: 1px solid black !important;
+    border: 1px solid teal !important;
   }
 
   .seat .seat__number {
@@ -13,7 +13,7 @@
   }
   
   .seat--selected {
-    background-color: green !important;
+    background-color: teal !important;
   }
   .seat--selected .seat__number {
     color: white !important;
@@ -26,14 +26,20 @@
   .seat-content {
     overflow: scroll !important;
   }
+
+/*   .chakra-ui-dark .seat-content .loader {
+  } */
+/*   .seat-content .loader {
+  }
   
   .seat-picker__row {
   }
   
   .seat-picker__row__number {
-  }
+  } */
   
   div.blank {
     display: none !important;
   }
+  
   

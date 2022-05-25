@@ -1,43 +1,8 @@
 import React from 'react'
-import {
-  Box,
-  Heading,
-  Link,
-  Image,
-  Text,
-  HStack,
-  Tag,
-  useColorModeValue,
-  Container,
-  VStack,
-  Divider,
-} from '@chakra-ui/react'
+import { Box, Heading, Link, Image, Text, useColorModeValue, Container, VStack, Divider } from '@chakra-ui/react'
 import MetallicaImg from 'assets/images/metallica.jpg'
-import Pricing from './Pricing'
-
-const BlogTags = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={'md'} variant="solid" colorScheme="teal" key={tag}>
-            {tag}
-          </Tag>
-        )
-      })}
-    </HStack>
-  )
-}
-
-export const BlogAuthor = (props) => {
-  return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Text fontWeight="medium">{props.name}</Text>
-      <Text>—</Text>
-      <Text>{props.date.toLocaleDateString()}</Text>
-    </HStack>
-  )
-}
+import Pricing from 'components/_Event/Pricing'
+import { EventAndDate, Tags } from 'components'
 
 const Event = () => {
   return (
@@ -69,7 +34,7 @@ const Event = () => {
         </Box>
         <Box display="flex" flex="1" flexDirection="column" justifyContent="center" marginTop={{ base: '3', sm: '0' }}>
           <VStack spacing={2}>
-            <BlogTags tags={['Heavy Metal', 'Band']} />
+            <Tags tags={['Heavy Metal', 'Band']} />
             <Heading marginTop="1">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Venezuela Tour
@@ -80,7 +45,7 @@ const Event = () => {
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
             </Text>
-            <BlogAuthor name="Caracas, CCCT" date={new Date('2022-10-06T19:01:27Z')} />
+            <EventAndDate name="Caracas, CCCT" date={new Date('2022-10-06T19:01:27Z')} />
           </VStack>
         </Box>
       </Box>
