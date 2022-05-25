@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Flex, Heading, List, ListItem, Stack, useColorModeValue } from '@chakra-ui/react'
+import { Button, Flex, Heading, List, ListIcon, ListItem, Stack, useColorModeValue } from '@chakra-ui/react'
 import { FaCheckCircle } from 'react-icons/fa'
 
 const PackageTier = ({ title, options, typePlan, checked = false, btnAction = () => {} }) => {
